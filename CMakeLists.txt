@@ -67,3 +67,7 @@ packageProject(
     INCLUDE_DESTINATION include/${PROJECT_NAME}-${PROJECT_VERSION}
     DEPENDENCIES ""
 )
+
+# ----- Create test executable -----
+add_executable(test "test/main.cc")
+target_link_libraries(test LAPJV)
